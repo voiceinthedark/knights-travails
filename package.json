@@ -1,6 +1,6 @@
 {
   "name": "knights-travails",
-  "version": "0.0.01",
+  "version": "0.0.15",
   "description": "wandering knight traversal on a graph",
   "main": "index.js",
   "scripts": {
