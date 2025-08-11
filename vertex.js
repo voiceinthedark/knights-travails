@@ -21,6 +21,14 @@ class Vertex{
     this.#visited = visited;
   }
 
+  get x(){
+    return this.#x
+  }
+
+  get y(){
+    return this.#y
+  }
+
   /**
    * @method getter for the visited property
    * @returns {boolean}
