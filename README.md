@@ -1,5 +1,5 @@
-# Hashset in javascript
+# Knights tour on a graph
 
 ## About
 
-Hashset implementation in javascript
+An implementation of a knight tour on a graph

@@ -1,7 +1,7 @@
 {
-  "name": "hashset javascript",
-  "version": "0.0.30",
-  "description": "A hashset implementation in javascript",
+  "name": "knights-travails",
+  "version": "0.0.01",
+  "description": "wandering knight traversal on a graph",
   "main": "index.js",
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
@@ -10,7 +10,10 @@
   },
   "type": "module",
   "keywords": [
-    "hashset",
+    "knight-tour",
+    "bfs",
+    "dfs",
+    "graph",
     "javascript",
     "jest"
   ],
