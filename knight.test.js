@@ -6,6 +6,10 @@ describe("Knight class tests", () => {
     test("knight default position is at 0, 0", () => {
       expect(k.position).toEqual([0, 0]);
     });
+    test("knight non-default position return correct coordinates", () => {
+      let kn = new Knight([3, 3])
+      expect(kn.position).toEqual([3, 3])
+    })
   });
   describe('Set position tests', () => {
     let k = new Knight()
@@ -18,7 +22,7 @@ describe("Knight class tests", () => {
     })
     
   })
-  describe("Adjacency list methods", () => {
+  describe.skip("Adjacency list methods", () => {
     let k = new Knight();
     test("method should return an array of arrays", () => {
       expect(k.buildAdjacencyList()).toBeInstanceOf(Array);
@@ -31,4 +35,14 @@ describe("Knight class tests", () => {
       expect(k.buildAdjacencyList()).toHaveLength(8)
     })
   });
+  describe('getNeighbors method tests', () => {
+    let k = new Knight([3, 3])
+    test('getNeighbors returns an array', () => {
+      expect(k.getNeighbors([3, 3])).toBeInstanceOf(Array)
+    })
+    test('getNeighbors returns correct results', () => {
+      expect(k.getNeighbors([3, 3])).toHaveLength(8)
+    })
+    
+  })
 });
